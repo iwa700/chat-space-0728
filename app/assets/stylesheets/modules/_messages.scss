@@ -11,7 +11,7 @@
         float:left;
         color:#ffffff;
         
-        .side-header{
+         .side-header{
           height: 100px;
           background-color: #253141; 
           display: flex;
@@ -81,7 +81,7 @@
            border-bottom: solid 1px #eee;
            
                .Right-header__group{
-               margin-top:35px;
+                margin-top:35px;
                 .Right-header-group{
                  font-size: 20px;
                  color: #333;
@@ -110,35 +110,35 @@
             }
     }
 
-            .messeges{
+           .messeges{
               height: calc(100vh - 100px - 90px);
               padding: 46px 40px;
               background-color: #fafafa; 
               overflow: scroll;
-              .message{
+             .message{
               padding-bottom: 40px;
-              &__upper-info{
-                display: flex;
-                margin-bottom: 10px;
+                &__upper-info{
+                 display: flex;
+                 margin-bottom: 10px;
                 &__talker{
-                color:blue;
-                font-size: 16px;
-                font-weight: bold;
+                 color:blue;
+                 font-size: 16px;
+                 font-weight: bold;
               }
                 &__date{
-                color: #999999;
-                font-size: 12px;
-                margin-left:10px;
+                 color: #999999;
+                 font-size: 12px;
+                 margin-left:10px;
               }
-             &__text{
-                color: #ffffff;
-                font-size: 14px;
-                margin-bottom: 10px;
+                &__text{
+                 color: #ffffff;
+                 font-size: 14px;
+                 margin-bottom: 10px;
             }
           }
          }
     }
-        .Footer{
+           .Footer{
            height: 90px;
            padding: 20px 50px 20px 40px;
            background-color:#dddddd;
@@ -162,18 +162,18 @@
                    color:#434a54;
                    border-style: none;
             }
-                   &__image{
+                  &__image{
                    font-size: 1.3rem;
                    position: absolute;
                    top: 10px;
                    right: 10px;
         
-                   &__file{
+                  &__file{
                     display: none;
                 }
             }
            }
-                .submit-btn{
+              .submit-btn{
                    background-color: #38AEF0;
                    width: 100px;
                    height: 50px;
