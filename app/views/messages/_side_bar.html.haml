@@ -4,17 +4,15 @@
       %p.side-header__box__user-name masa
       %ul.side-header__box__menu
         %li.side-header__box__menu__new-group  
-          %a{ href:"/groups/new"}
-          
-            %i.fa.fa-edit
-         
+          = link_to "#" do
+            = icon('fas','edit')
+        
         %li.side-header__box__menu__edit-user
-          %a{ href:"/users/1013/edit"}
-            %i.fa.fa-cog
+          = link_to "#" do
+            = icon('fas','cog')
           
             
   .groups
-    %a{ href:"/groups/2033/messeges"}
-      .group
+    = link_to "#", class:"group" do
       %p.group__group-name techcamp
       %p.group__latest-message まだメッセージはありません
