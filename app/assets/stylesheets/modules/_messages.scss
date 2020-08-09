@@ -4,6 +4,7 @@
 
    .wrapper{
        display: block;
+       text-decoration: none;
        
    
        .chat-side{
@@ -48,6 +49,8 @@
           height: calc(100vh - 100px);
           width:300px;
           padding: 20px 20px 0;
+          text-decoration: none;
+          overflow: scroll;
           
           color: #ffffff;
             .group{
@@ -57,9 +60,13 @@
               &__group-name{
                   font-size: 15px;
                   margin-bottom: 5px;
+                  color: #ffffff;
+                  text-decoration: none;
               }
               &__latest-message{
+                  text-decoration: none;
                   font-size: 11px;
+                  color: #ffffff;
               }
             }
           }
@@ -143,48 +150,49 @@
            height: 90px;
            padding: 20px 50px 20px 40px;
            background-color:#dddddd;
-           display: flex;
-           justify-content: space-around;
            
-            .new_message{
+            .Form{
+
              display: flex;
             
-             }
-               .input-box{
-                  display: flex;
+             .input-box{
+               display: flex;
+               width:  100%;
+               background-color: #fff;
+               position: relative;
+               
+               .Form__inputContent{
+                 height: 50px;
+                 width: 100%;
+                 padding: 0 40px 0 10px;
+                 color:#434a54;
+                 border-style: none;
+                }
+                .Form__inputImage{
+                  font-size: 1.3rem;
                   position: relative;
-                  width:  100%;
-                  background-color: #fff;
-
-                   &__text{
-                    height: 50px;
-                    width: 100px;
-                    padding: 0 40px 0 10px;
-                    color:#434a54;
-                    border-style: none;
-                   }
-                    &__image{
-                       font-size: 1.3rem;
-                       position: absolute;
-                       top: 10px;
-                       right: 10px;
-                   
-                       &__file{
-                       display: none;
-                   }
+                  top: 10px;
+                  right: 10px;
+                  .Form_icon{
+                  position: absolute;
+                  }
+                    .Hidden{
+                      display: none;
+                    }
                 }
+              }
                 
-                }
               
-              .submit-btn{
-                   background-color: #38AEF0;
-                   width: 100px;
-                   height: 50px;
-                   padding: 0 30px;
-                   margin-left: 15px;
-                   color:#fff;
-                   border:none;
-                   }
+              .Form__submit{
+                background-color: #38AEF0;
+                width: 100px;
+                height: 50px;
+                padding: 0 30px;
+                margin-left: 15px;
+                color:#fff;
+                border:none;
+              }
             }
+          }
         }
     }
