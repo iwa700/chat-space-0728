@@ -2,16 +2,18 @@ $(function(){
     function buildHTML(message){
       if ( message.image ) {
         let html =
-          `<div class="messeges">
-            <div class="MessageInfo">
-              <div class="MessageInfo__userName">
+        `<div class="messege">
+          <div class="messege_box">
+           <div class="message__upper-info">
+            <p class="message__upper-info__talker">
                 ${message.user_name}
-              </div>
-              <div class="MessageInfo__date">
+            </p>
+              <p class="message__upper-info__date">
                 ${message.created_at}
-              </div>
+              </p>
             </div>
-            <div class="Message">
+            <p class="message__text">
+            </p>
               <p class="Message__content">
                 ${message.content}
               </p>
@@ -21,16 +23,18 @@ $(function(){
         return html;
       } else {
         let html =
-        `<div class="MessageBox">
-          <div class="MessageInfo">
-            <div class="MessageInfo__userName">
-              ${message.user_name}
+        `<div class="messege">
+          <div class="messege_box">
+            <div class="message__upper-info">
+              <p class="message__upper-info__talker">
+                ${message.user_name}
+              </p>
+              <p class="message__upper-info__date">
+                ${message.created_at}
+              </p>
             </div>
-            <div class="MessageInfo__date">
-              ${message.created_at}
-            </div>
-          </div>
-          <div class="Message">
+            <p class="message__text">
+            </p>
             <p class="Message__content">
               ${message.content}
             </p>
