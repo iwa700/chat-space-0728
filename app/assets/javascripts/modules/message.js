@@ -2,7 +2,7 @@ $(function(){
     function buildHTML(message){
       if ( message.image ) {
         let html =
-        `<div class="messege">
+        `<div class="messege" data-message-id=${message.id}>
           <div class="messege_box">
            <div class="message__upper-info">
             <p class="message__upper-info__talker">
@@ -23,7 +23,7 @@ $(function(){
         return html;
       } else {
         let html =
-        `<div class="messege">
+        `<div class="messege" data-message-id=${message.id}>
           <div class="messege_box">
             <div class="message__upper-info">
               <p class="message__upper-info__talker">
@@ -66,6 +66,8 @@ $(function(){
       })
       .fail(function(){
         alert('error');
+        $('.Form__submit').prop('disabled', false);
       });
     });
+    
   });
